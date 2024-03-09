@@ -35,7 +35,7 @@ function Signup() {
       if (x == true) {
         e.preventDefault();
         await axios
-          .post("http://localhost:3000/api/v1/signup", signupdata)
+          .post("https://intern-assignment-fpe9.onrender.com/api/v1/signup", signupdata)
           .then((r) => {
             if (r.data.message === "error") {
               toast.error("Please select unique username and email")

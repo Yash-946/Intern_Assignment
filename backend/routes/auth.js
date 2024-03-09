@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const router = require("express").Router();
 const { signupsch } = require("../Db");
 const jwt = require("jsonwebtoken");
